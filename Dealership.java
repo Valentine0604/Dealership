@@ -37,7 +37,18 @@ public class Dealership {
                 }
                 break;
             case "b":
-                System.out.println("You have chosen option " + option);
+                System.out.println("\nWhat is your car valued at?");
+                int value = scan.nextInt();
+
+                System.out.println("\nWhat is your selling price?");
+                int price = scan.nextInt();
+
+                if(price < value && price < 30000){
+                    System.out.println("\nWe will buy a car. Pleasure doing business with you");
+                }
+                else{
+                    System.out.println("\nSorry, we're not interested");
+                }
                 break;
             default:
                 System.out.println("Invalid option");
